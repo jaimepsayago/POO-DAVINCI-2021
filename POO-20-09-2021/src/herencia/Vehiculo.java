@@ -6,7 +6,7 @@ public class Vehiculo {
 	private Integer numSerie;
 	
 	//constructor
-	//inicializar variables
+	//inicializar variablesv
 	
 	//vacio
 	Vehiculo() {
