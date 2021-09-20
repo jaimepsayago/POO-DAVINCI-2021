@@ -3,7 +3,7 @@ package herencia;
 public class Vehiculo {
 	
 	private String color;
-	private Integer numSerie;
+	private int numSerie;
 	
 	//constructor
 	//inicializar variablesv
@@ -14,7 +14,7 @@ public class Vehiculo {
 	}
 	
 	//datos
-	public Vehiculo(String color, Integer numSerie) {
+	public Vehiculo(String color, int numSerie) {
 		this.color= color;
 		this.numSerie= numSerie;
 	}
@@ -34,11 +34,11 @@ public class Vehiculo {
 		this.color = color;
 	}
 
-	public Integer getNumSerie() {
+	public int getNumSerie() {
 		return numSerie;
 	}
 
-	public void setNumSerie(Integer numSerie) {
+	public void setNumSerie(int numSerie) {
 		this.numSerie = numSerie;
 	}
 	

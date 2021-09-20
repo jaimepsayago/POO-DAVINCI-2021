@@ -6,8 +6,8 @@ public class Coche extends Vehiculo{
 	private int cilindraje;
 	
 	//constructor
-	public Coche(String color, Integer numSerie, int cilindraje) {
-		super(color, numSerie);
+	public Coche(String color, int i, int cilindraje) {
+		super(color, i);
 		this.cilindraje = cilindraje;
 	}
 
