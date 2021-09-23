@@ -11,7 +11,7 @@ public class AppEjercicio {
 		
 		//agregar datos a las variables del objeto
 		revista.setPeriodicidad("dos volumenes");
-		revista.setNumeroEjemplaresPorAnyo(4);
+		revista.setNumeroEjemplaresPorAnyo(4); 
 		System.out.println("revista");
 		System.out.println(revista.getPeriodicidad()+ "\n " + revista.getNumeroEjemplaresPorAnyo());
 		
