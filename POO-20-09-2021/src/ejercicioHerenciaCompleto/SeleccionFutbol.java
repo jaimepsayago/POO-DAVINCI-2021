@@ -1,7 +1,7 @@
 package ejercicioHerenciaCompleto;
 
 public class SeleccionFutbol {
-	
+
 	//declarar variables o atributos o caracteristicas
 	//						accesibilidad a package	---accesible a subclase---	subclase otro package
 	// public +					si								si						si
