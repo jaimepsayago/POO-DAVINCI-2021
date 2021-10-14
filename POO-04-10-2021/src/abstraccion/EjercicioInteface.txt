@@ -1,0 +1,6 @@
+Un ejemplo del uso de interfaces con base en el modelo de herencia de figuras geométricas es el siguiente. 
+En este ejemplo, se plantea la posibilidad de dibujar una figura como círculo o rectángulo. 
+Para ello, se crea una interfaz denominada FiguraDíbujabIe que contiene métodos 
+que definen comportamiento de dibujo de la figura. 
+Entonces se puede hacer una clase que herede de Círculo e implemente FiguraDibujabIe 
+y una clase que herede de Rectángulo e implemente FiguraDibujabIe.
