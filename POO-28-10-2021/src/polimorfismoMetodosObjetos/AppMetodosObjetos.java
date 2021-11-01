@@ -18,13 +18,21 @@ public class AppMetodosObjetos {
 		//objeto grupoPersonas
 		GrupoPersonas gp = new GrupoPersonas();
 		
-		gp.agregaPersona(p);
-		Persona p1 = new Persona("juan", "1234");
+		gp.agregaPersona(p); //añadimos una persona
 		
+		Persona p1 = new Persona("pablo", "0005");
 		gp.agregaPersona(p1);
 		
 		
-		gp.eliminaPersona("1234");
+		//gp.eliminaPersona("1234");
+		
+		
+		System.out.println(gp.toString());
+		
+		//como mostramos todos los datos sin utilizar el toString()
+		
+		gp.visualizar();
+		
 
 	}
 

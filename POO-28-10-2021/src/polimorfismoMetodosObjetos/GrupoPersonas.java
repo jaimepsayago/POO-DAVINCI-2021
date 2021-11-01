@@ -68,6 +68,15 @@ public class GrupoPersonas {
 		return personaLista.toString();
 	}
 	
+	//visualizar
+	
+	public void visualizar() {
+		System.out.println("Mostrar todos los datos de las personas");
+		for (Persona p : personaLista) {
+			System.out.println("el nombre es: " + p.getNombre() + " y el Dni es: " +p.getDni());
+		}
+	}
+	
 	
 
 }
