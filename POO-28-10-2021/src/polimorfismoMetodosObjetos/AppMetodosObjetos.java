@@ -1,6 +1,6 @@
 package polimorfismoMetodosObjetos;
 
-
+import java.util.Stack;
 
 public class AppMetodosObjetos {
 
@@ -32,6 +32,8 @@ public class AppMetodosObjetos {
 		//como mostramos todos los datos sin utilizar el toString()
 		
 		gp.visualizar();
+		
+		
 		
 
 	}
