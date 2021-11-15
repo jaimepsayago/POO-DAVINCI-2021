@@ -65,6 +65,24 @@ public class AppQueue {
 		
 		//frontEnd  o capa presentacion
 		
+	
+		//Ejercicio 
+		Libro l1 = new Libro("tibulo1", "auto1");
+		Libro l2 = new Libro("tibulo2", "auto2");
+		Libro l3 = new Libro("tibulo3", "auto3");
+		Libro l4 = new Libro("tibulo4", "auto4");
+		
+		//como inserto en forma de cola con linkedlist y muestro los datos?
+		LinkedList<Libro> listaLibros = new LinkedList<Libro>();
+		listaLibros.add(l1);
+		listaLibros.add(l2);
+		listaLibros.add(l3);
+		listaLibros.add(l4);
+		Iterator <Libro> iteratorLibro = listaLibros.iterator();
+		while(iteratorLibro.hasNext()) { 
+			System.out.println(iteratorLibro.next());
+		}
+		
 		
 		
 	}

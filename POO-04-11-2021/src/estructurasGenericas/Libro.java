@@ -28,7 +28,7 @@ public class Libro {
 	}
 	
 	//metodos adicionales que toda clase de tener
-	
+	//imprime los datos del objeto
 	public String toString() {
 		return ("titulo: " + titulo +  " " + "autor: " + autor);
 	}
