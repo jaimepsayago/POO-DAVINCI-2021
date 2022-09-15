@@ -6,6 +6,7 @@ public class Persona {
 	private String apellidos;
 	private int edad;
 	
+	
 	public Persona() {
 		nombre=" ";apellidos=" ";edad=0; //inicializar en null o vacio las variables
 	}

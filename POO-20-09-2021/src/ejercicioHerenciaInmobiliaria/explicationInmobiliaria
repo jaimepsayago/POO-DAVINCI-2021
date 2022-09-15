@@ -1,0 +1,125 @@
+El esquema adjuntado representa todo el conjunto de objetos instanciados en la clase Inicio, 
+que en su conjunto responden a dos “integraciones”: 
+una para todo el conjunto de información asociada a inmueble 1, 
+y otra para “integración” de objetos que encapsulan toda la información asociada a inmueble 2. 
+Estas “integraciones” de objetos a que estamos haciendo referencia, 
+responden al concepto de composición que estamos tratando en este apartado. 
+
+Se comprueba por el ejemplo, que la composición se consigue disponiendo referencias a objetos, 
+como atributos de otros objetos. 
+
+En el ejemplo, la clase Inmueble tiene el atributo fechaConstruccion, 
+que en realidad es una referencia a otro objeto, 
+uno que responde a la clase Fecha. 
+
+También nos encontramos con el atributo propietario, 
+que es una referencia a un objeto de la clase Persona, 
+que encapsula la información asociada al propietario del inmueble. 
+
+En este objeto de la clase Persona, el atributo fechaNacimiento, 
+es, a su vez, una referencia a otro objeto, 
+concretamente de la clase Fecha. 
+
+Más información asociada a un inmueble, es la existencia o no de Piscina, 
+y la existencia o no de Garaje. 
+
+Lo implementamos disponiendo en los objetos de la clase Inmueble de los atributos 
+tipo referencia Piscina, y referencia Garaje. 
+
+
+Dichas referencias, ante ausencia de este tipo de elementos asociados al inmueble, 
+como es el caso del inmueble 1, simplemente, no “apuntan” a ningún objeto. 
+
+En el caso del inmueble 2, que sí que tiene Piscina y Garaje, dichas referencias, 
+apuntan a sendos objetos que encapsulan la información asociada a los correspondientes 
+elementos del inmueble. En la representación gráfica del esquema, 
+las referencias se representan mediante cuadrados, de los que parte, 
+caso de “apuntar” a algún objeto, una línea continua dirigida al objeto a que “apunta”. 
+
+También podemos observar en la mayor parte de objetos “secundarios”, 
+que son “apuntados”, además de la referencia atributo del objeto, 
+de otra referencia externa a objeto, como son: fechaInmueble1, 
+datosPropietario1, fechaInmueble2, datosPropietario2, piscinaCasa, y garajeCasa. 
+
+Estas referencias actúan como temporales intermedias para para recoger la referencia 
+devuelta en la instanciación del objeto, por ejemplo:
+
+Fecha fechaInmueble1 = new Fecha();
+
+Y que posterior y definitivamente, el valor de dicha referencia sea asignado 
+a la referencia atributo del objeto “integrador” (acción representada mediante línea discontinua): 
+
+inmueble1.setFechaConstruccion(fechaInmueble1); 
+
+mediante el correspondiente método “setter”. 
+Dicha asignación se efectúa en el caso del otro objeto mediante el constructor del objeto “integrador”: 
+
+Inmueble inmueble2 = 
+new Inmueble(220, (byte)4, 450000, fechaInmueble2, datos- Propietario2, piscinaCasa, garajeCasa); 
+
+En un intento de ampliar la casuística de asignación de referencias a atributos de objetos 
+“integradores”, nos encontramos también el caso de instanciación en el lugar del valor de 
+argumento transferido a constructor. 
+
+Caso de la asignación a la referencia fechaNacimiento: 
+
+Persona datosPropietario1 = 
+new Persona(“12378”, “PEDRO JOSE GIMENEZ APARICIO”, “631575890”, new Fecha(9, 12, 1985)); 
+
+en que no se utiliza el procedimiento anterior de utilizar una referencia temporal intermedia, 
+sino que en: 
+
+new Persona( . . . , new Fecha(9, 12, 1985)); 
+
+concurren dos acciones: 
+1. Instanciar el objeto de la clase Fecha. 
+2. La referencia devuelta por el operador new, 
+en lugar de ser asignada explícitamente a una referencia declarada a tal efecto, 
+se transfiere como argumento del constructor. 
+
+Fijando nuestra atención en los constructores, 
+observamos que encontramos en las clases Inmueble, Persona, y Fecha, 
+constructor con argumentos, y constructor sin argumentos. 
+
+Y en las clases Piscina, y Garaje, solamente constructor sin argumentos. 
+
+Concluimos que, con independencia de que una clase tenga o no, constructor con argumentos, 
+sí que debe tener necesariamente constructor sin argumentos; 
+
+a efectos de cumplir con uno de los requisitos exigidos por la especificación JavaBean. 
+
+La existencia de un constructor con argumentos en una clase, 
+posibilita la asignación inicial de valores a los atributos mediante dicho constructor. 
+
+En los casos en que no disponga de dicho constructor, 
+siempre será posible dicha asignación de valores a los atributos mediante los correspondientes “Setters”, 
+métodos que necesariamente tendrá en cumplimiento con otro de los requisitos 
+determinados por la especificación JavaBean. 
+
+Centrándonos en aquellos atributos tipo referencia en una clase, 
+que son la base de la implementación de la composición, nos encontramos 
+con dos casos: 
+1. Necesariamente debe existir un objeto “apuntado” desde dicha referencia porque 
+necesariamente existen en el “mundo real” datos modelados por dicho objeto. 
+
+Es el caso de fechaConstruccion en Inmueble, 
+y fechaNacimiento en Persona; 
+dado que en el “mundo real”, 
+necesariamente existe una fecha en que fue construido cualquier inmueble, 
+y necesariamente también para todo ser humano existe una fecha en que nació. 
+
+2. No tiene el por qué existir necesariamente en el “mundo real”. 
+Es el caso de los objetos Piscina, y Garaje, 
+para un objeto de la clase Inmueble. 
+
+En estos casos, en el constructor sin argumentos de Inmueble, 
+se ha establecido que, por defecto, 
+un Inmueble no tiene ni Piscina, ni Garaje. 
+
+Tal circunstancia queda implementada: 
+piscina = null; garaje = null; 
+asignando null a ambas referencias. 
+
+Caso de que un inmueble disponga de tales dotaciones (piscina, garaje), 
+la asignación de la referencia al objeto que las modela, 
+se implementará mediante una de las siguientes cuatro posibilidades:

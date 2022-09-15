@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>350</x>
+      <y>290</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>_tp2:TravelPart_
+--
+dep=2003-09-23
+arr=2003-09-23
+...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>70</x>
+      <y>290</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>_cp2: ConnPart_
+--
+von="LHR"
+nach="LA"
+flNr="NZ4550V"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>670</x>
+      <y>290</y>
+      <w>240</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>_tp2: TravelPart_
+--
+gate="A55"
+...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>670</x>
+      <y>160</y>
+      <w>240</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>_tp1: TravelPart_
+--
+gate="D12"
+...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>570</x>
+      <y>10</y>
+      <w>180</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>_th4711: TravelHandling_
+--
+numOfBags=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>480</x>
+      <y>350</y>
+      <w>210</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;-
+r2=_travel_</panel_attributes>
+    <additional_attributes>190;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>480</x>
+      <y>200</y>
+      <w>210</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;-
+r2=_travel_</panel_attributes>
+    <additional_attributes>190;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>420</x>
+      <y>20</y>
+      <w>170</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;-
+r2=_travel_</panel_attributes>
+    <additional_attributes>150;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>350</x>
+      <y>160</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>_tp1: TravelPart_
+--
+dep=2003-09-23
+arr=2003-09-23
+...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>200</x>
+      <y>350</y>
+      <w>170</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;-
+r2=_conn_</panel_attributes>
+    <additional_attributes>150;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>200</x>
+      <y>210</y>
+      <w>170</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;-
+r2=_conn_</panel_attributes>
+    <additional_attributes>150;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>290</x>
+      <y>10</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>_t42: Travel_
+--
+dep=2003-09-23
+arr=2003-09-24
+class="Economy"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>70</x>
+      <y>160</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>_cp1: ConnPart_
+--
+from="MUC"
+to="LHR"
+flNr="LH4754"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>140</x>
+      <y>20</y>
+      <w>170</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;-
+r2=_conn_</panel_attributes>
+    <additional_attributes>150;30;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>_c42: Connection_
+--
+from="MUC"
+to="AKL"
+dep=07:45
+arr=06:30 (+24)
+status="planned"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>570</x>
+      <y>90</y>
+      <w>120</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;260;100;260</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>570</x>
+      <y>90</y>
+      <w>120</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;100;100;100</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>280</x>
+      <y>90</y>
+      <w>90</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;110;70;110</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>280</x>
+      <y>90</y>
+      <w>90</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;270;70;270</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>0</x>
+      <y>90</y>
+      <w>98</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;280;74;280</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>0</x>
+      <y>90</y>
+      <w>90</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;110;70;110</additional_attributes>
+  </element>
+</diagram>

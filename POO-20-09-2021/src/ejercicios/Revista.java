@@ -1,6 +1,6 @@
 package ejercicios;
 
-public class Revista {
+public class Revista extends Publicacion {
 
 	public int numeroEjemplaresPorAnyo;
 	public String periodicidad;

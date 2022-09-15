@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>270</x>
-      <y>20</y>
+      <x>370</x>
+      <y>100</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
@@ -27,8 +27,8 @@ toString():String
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>30</x>
-      <y>270</y>
+      <x>120</x>
+      <y>360</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
@@ -44,8 +44,8 @@ getAlquilerTotal():double
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>290</x>
-      <y>260</y>
+      <x>380</x>
+      <y>350</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
@@ -61,8 +61,8 @@ getAlquilerTotal():double
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>570</x>
-      <y>260</y>
+      <x>660</x>
+      <y>350</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
@@ -77,8 +77,8 @@ getAlquilerTotal():double
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>660</x>
-      <y>40</y>
+      <x>750</x>
+      <y>130</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
@@ -94,45 +94,68 @@ getAlquilerTotal():double
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>130</x>
-      <y>120</y>
-      <w>160</w>
-      <h>160</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>140.0;10.0;10.0;140.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>430</x>
+      <x>220</x>
       <y>200</y>
-      <w>80</w>
-      <h>80</h>
+      <w>170</w>
+      <h>170</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;60.0;60.0</additional_attributes>
+    <additional_attributes>150.0;10.0;10.0;150.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>470</x>
-      <y>140</y>
-      <w>140</w>
-      <h>140</h>
+      <x>530</x>
+      <y>280</y>
+      <w>70</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;120.0;120.0</additional_attributes>
+    <additional_attributes>10.0;10.0;50.0;70.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>470</x>
-      <y>80</y>
+      <x>570</x>
+      <y>220</y>
+      <w>130</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>160</y>
+      <w>200</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
       <w>210</w>
-      <h>30</h>
+      <h>190</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;190.0;10.0</additional_attributes>
+    <panel_attributes>/Vehiculo/
+--
++Matricula: String
++dias:int
++valorAlquiler= 50: Double
+--
++Vehiculo()
++Vehiculo(String matricula, 
+int dias):ctor
+calcularBaseAlquiler(): Double
+
+toString():String
+</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>

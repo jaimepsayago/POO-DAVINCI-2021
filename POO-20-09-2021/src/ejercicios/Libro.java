@@ -1,6 +1,6 @@
 package ejercicios;
 
-public class Libro {
+public class Libro extends Publicacion {
 
 	public String isbn;
 	public String nombreAutor;
