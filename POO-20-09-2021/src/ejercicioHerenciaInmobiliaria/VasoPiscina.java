@@ -1,5 +1,4 @@
-
-package encapsuladoras;
+package ejercicioHerenciaInmobiliaria;
 
 public enum VasoPiscina {
     HORMIGON(400,"Estructura de hormigón armado"),

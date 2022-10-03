@@ -30,8 +30,10 @@ public class Inicio {
         garajeCasa.setNumeroPlazas((byte)2);
         garajeCasa.setPuertaAperturaAutomatica(true);
         //     INMUEBLE 2
-        Inmueble inmueble2 = new Inmueble(220, (byte)4, 450000, fechaInmueble2, datosPropietario2, piscinaCasa, garajeCasa);        
-        inmueble2.setVolumenPiscina(50);
+        Inmueble inmueble2 = new Inmueble(220, (byte)4, 450000, fechaInmueble2, datosPropietario2, piscinaCasa, garajeCasa); 
+
+       // inmueble2.set
+       // inmueble2.setVolumenPiscina(50);
         inmueble2.setCubiertaPiscina(false);
         inmueble2.setVasoPiscina(VasoPiscina.FIBRA_VIDRIO);
         
